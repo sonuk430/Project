@@ -1,0 +1,130 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(165, 42, 42, 0.2);
+}
+
+.nav {
+  background-image: url(https://i.pinimg.com/736x/e1/c2/3a/e1c23ac34847740f672717c89a62ae37.jpg);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 8px black;
+  margin-bottom: 40px;
+}
+
+.search {
+  position: sticky;
+  top: 60px;
+  left: 15%;
+  width: 70%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(99, 18, 18, 1);
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* nav end */
+
+/* main start */
+
+/* coffee-manu */
+
+.coffee-manu {
+  height: 250px;
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.coffee-img {
+  /* height: 150px;
+    width: 150px; */
+  /* border-radius: 50%; */
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 8px black;
+}
+h4 {
+  /* background-color: red; */
+  margin-top: 15px;
+  /* margin-block: 15px; */
+}
+img:hover {
+  box-shadow: 0px 18px 18px black;
+  height: 152px;
+  width: 152px;
+}
+
+/* coffee-manu end */
+
+/* coffee-house */
+
+.coffee-house {
+  background-color: rgb(165, 42, 42, 0.3);
+  width: 90%;
+  margin: auto;
+  margin-block: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px brown;
+}
+
+h1 {
+  display: block;
+  /* background-color: red; */
+  font-size: 1.5em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: brown;
+}
+p {
+  color: brown;
+}
+
+/* coffee-house end */
+
+/* coffee-list */
+
+.coffee-list {
+  width: 90%;
+  margin: auto;
+  margin-block: 50px;
+  background-color: rgb(165, 42, 42, 0.3);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px brown;
+}
+
+ol , li{
+  color: brown;
+  padding: 5px;
+  
+}
+
+.h1-coffee-list{
+   margin: 0;
+
+}
+
+/* coffee-list end */
