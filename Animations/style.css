@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+.wrapper img {
+  max-width: 350px;
+  transform-origin: center;
+  /* image ko y direction me rotate kiya he esse */
+  transform: perspective(800px) rotateY(20deg);
+  transition: 0.5s;
+  box-shadow: 0px 0px 8px grey;
+  border-radius: 5px;
+}
+
+.wrapper:hover img {
+  opacity: 0.1;
+}
+
+.wrapper img:hover {
+  transform: perspective(800px) rotate(0deg);
+  opacity: 1;
+}
