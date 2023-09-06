@@ -24,89 +24,118 @@ main {
 }
 
 /* navBar style start */
-header {
-  width: 100%;
-  height: 13vh;
-  /* border: 2px solid red; */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: solid green; */
+  width: 100vw;
+  height: 80px;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   background-color: white;
 }
-header nav {
+
+.left_nav {
   display: flex;
   align-items: center;
-  /* z-index: 20; */
+  justify-content: center;
+  width: 700px;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  /* border: solid orange; */
 }
-header > nav > .home-image {
-  width: 10%;
-  height: 60%;
-  margin-left: 1%;
-  /* border: 2px solid red; */
+.left_nav img {
+  position: relative;
+  cursor: pointer;
+  height: 75%;
 }
-header nav ul {
-  /* border: 2px solid red; */
+
+.left_nav ul {
+  height: 100%;
   list-style-type: none;
   font-size: 14px;
-  line-height: 80px;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
-  width: 37rem;
+  align-items: center;
+  gap: 30px;
 }
 
-header nav ul li {
-  padding: 0 2.7%;
-  cursor: pointer;
-  /* border: 2px solid green;  */
-}
-
-header nav ul li a {
+.left_nav ul li {
+  border-bottom: solid white;
+  padding: 28px 0;
   text-decoration: none;
-  color: var(--text-color);
+  color: #282c3f;
 }
 
-header nav ul .home-cata1:hover {
+.left_nav ul span {
+  text-align: left;
+  margin-left: -28px;
+  margin-top: -15px;
+  font-size: 10px;
+  /* text-align: top; */
+  color: #ff3f6c;
+}
+
+.left_nav ul li a {
+  height: 100%;
+  text-decoration: none;
+  color: #282c3f;
+}
+
+.left_nav ul .home-cata1:hover {
   border-bottom-color: rgb(238, 95, 115);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
-header nav ul .home-cata2:hover {
+.left_nav ul .home-cata2:hover {
   border-bottom-color: rgb(250, 80, 173);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
-header nav ul .home-cata3:hover {
+.left_nav ul .home-cata3:hover {
   border-bottom-color: rgb(255, 103, 0);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
-header nav ul .home-cata4:hover {
+.left_nav ul .home-cata4:hover {
   border-bottom-color: rgb(250, 227, 17);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
-header nav ul .home-cata5:hover {
+.left_nav ul .home-cata5:hover {
   border-bottom-color: rgb(35, 197, 160);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
-header nav ul .home-cata6:hover {
+.left_nav ul .home-cata6:hover {
   border-bottom-color: rgb(238, 95, 115);
   border-bottom-style: solid;
   border-bottom-width: 4px;
 }
 
-header nav .home-searchbar {
-  position: relative;
-  margin-right: 8px;
-  box-sizing: inherit;
-  display: block;
+.right_nav {
+  display: flex;
+  width: 700px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-header nav .home-searchbar input {
+.home-searchbar {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: calc(80px - 30px);
+}
+
+.home-searchbar input {
+  width: 100%;
+  height: 100%;
   display: inline-block;
   font-size: 13px;
   height: 20px;
@@ -117,25 +146,20 @@ header nav .home-searchbar input {
   border: 1px solid #f0f0f1;
   border-radius: 4px;
   background: #f5f5f6;
-  width: 19rem;
-  margin-left: 2.5rem;
-  /* border: 2px solid red; */
 }
-
-header nav .home-searchbar input:focus {
-  background-color: white;
-  outline: none;
-}
-
-header nav .home-searchbar i {
+.home-searchbar i {
+  margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  line-height: 24px;
+  /* background-color: rebeccapurple; */
   position: absolute;
-  top: 0.8rem;
-  left: 3.4rem;
   color: #696e79;
-  font-size: 14px;
-  /* display: none; */
 }
-header nav .home-iconbar {
+
+/* --------------------------------- search bar */
+
+.home-iconbar {
   display: flex;
   font-size: 12px;
   line-height: 6px;
@@ -147,26 +171,18 @@ header nav .home-iconbar {
   justify-content: space-between;
 }
 
-header nav .home-iconbar i {
-  font-size: 16px;
-  margin-top: 8px;
-  text-align: center;
+.home-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
 
-header nav .home-iconbar p {
-  padding-top: 10px;
-  color: var(--text-color);
+.home-profile i {
+  font-size: 17px;
 }
-
-header nav .home-iconbar .home-profile i {
-  padding-left: 8px;
-  cursor: default;
-}
-
-header nav .home-iconbar .home-wishlist i {
-  padding-left: 10px;
-}
-
 /*                                navbar end    */
 
 /* hero section style */
@@ -558,25 +574,20 @@ header nav .home-iconbar .home-wishlist i {
 
 /* bell style start */
 
-.bell_icon {
-  /* display: flex; */
-  /* align-items: center; */
-  text-align: center;
-  /* justify-content: center; */
-}
 .bell {
   position: fixed;
+  text-align: center;
   background-color: rgb(29, 133, 252);
   border-radius: 100%;
-  bottom: 0;
+  bottom: 80px;
   /* left: 0; */
-  right: 0;
-  display: block;
+  right: 20px;
+  /* display: block; */
   width: 40px;
   height: 40px;
   font-size: 25px;
-  /* margin: 30px auto 0; */
   color: #fff;
+  /* margin: 30px auto 0; */
   -webkit-animation: ring 4s 0.7s ease-in-out infinite;
   -webkit-transform-origin: 50% 4px;
   -moz-animation: ring 4s 0.7s ease-in-out infinite;
@@ -584,7 +595,10 @@ header nav .home-iconbar .home-wishlist i {
   animation: ring 4s 0.7s ease-in-out infinite;
   transform-origin: 50% 4px;
 }
+/* .bell span i{
 
+  
+} */
 @-webkit-keyframes ring {
   0% {
     -webkit-transform: rotateZ(0);
