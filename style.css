@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  font: normal 16px Helvetica, Verdana Arial, sans-serif;
+  background: rgb(2, 12, 68);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* header first part */
+.h1st {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  background-color: #174973;
+}
+
+.h1st_c1 {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.h1st_c1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.h1st_c2 {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.h1st_c2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.h1st a:hover {
+  color: rgb(8, 39, 212);
+  transition: 0.3s;
+}
+
+/* header 2nd part */
+.h2st {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(2, 7, 37);
+}
+
+.content {
+  text-align: center;
+}
+
+.content h4 {
+  margin-top: 15px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.content h2 {
+  padding: 10px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.content h6 {
+  padding-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.logo {
+  height: 95%;
+  width: 100px;
+}
+
+.g20 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+}
+
+.emblem {
+  height: 95%;
+  width: 55px;
+}
+
+/* header 3rd part  */
+
+.h3st {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 45px;
+  border-bottom: solid grey 4px;
+  background-color: rgb(10, 29, 133);
+}
+
+.h3st_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.chl_logo {
+  height: 60%;
+  width: 300px;
+}
+
+.chl_logo img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.h3st_list_c a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* border: solid red; */
+}
+
+.h3st_list_c a:hover {
+  color: #f5ae0e;
+  transition: 0.3s;
+}
+
+.bg_video {
+    width: 100%;
+  height: 600px;
+}
+
+.bg_video video {
+    width: 100%;
+  height: 100%;
+}
