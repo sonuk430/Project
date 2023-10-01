@@ -3,34 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: auto;
-  width: 100vw;
-}
 
 .wrapper {
   width: 100%;
-  font: normal 16px Helvetica, Verdana Arial, sans-serif;
-  /* overflow-y: hidden; */
+  font: normal 1rem Helvetica, Verdana Arial, sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* header first part */
 .h1st {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 45px;
+  height: 2.8rem;
   background-color: #174973;
 }
 
 .h1st_c1 {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.62rem;
   list-style: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .h1st_c1 a {
@@ -40,9 +39,9 @@ body {
 
 .h1st_c2 {
   display: flex;
-  gap: 10px;
+  gap: 0.62rem;
   list-style: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .h1st_c2 a {
@@ -72,15 +71,15 @@ body {
 }
 
 .content h4 {
-  margin-top: 15px;
-  font-size: 15px;
+  margin-top: 0.95rem;
+  font-size: 0.95rem;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
 .content h2 {
-  padding: 10px;
-  font-size: 22px;
+  padding: 0.62rem;
+  font-size: 1.35rem;
   letter-spacing: 2px;
   font-weight: 600;
 }
@@ -102,7 +101,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100px;
+  width: 6.25rem;
 }
 
 .emblem {
@@ -164,41 +163,105 @@ body {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-bottom: solid 30px rgb(5, 14, 66);
+  overflow: hidden;
+}
+.Heading_wrapper {
+  position: absolute;
+  bottom: 0px;
+  /* z-index: 1; */
+  /* border: solid 2px orange; */
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  /* opacity: 1; */
+}
+
+.Heading {
+  /* z-index: 10; */
+  background-color: #1558ba;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.Heading h3 {
+  opacity: 1;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Heading:hover {
+  opacity: 0;
 }
 
 /* background video ke niche jo multipal option hai */
 
 .option {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   display: flex;
-  /* align-items: center; */
+  align-items: end;
   justify-content: center;
   gap: 25px;
-  border: solid red;
-  /* justify-content: space-around; */
+  /* border: solid 2px red; */
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .option_part {
+  /* border:  solid 2px green; */
   position: relative;
-  bottom: 0px;
+  /* bottom: 0px; */
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-around;
   gap: 10px;
-  height: fit-content;
+  /* height: fit-content; */
   width: 250px;
+  height: auto;
+  /* height: auto; */
   overflow: hidden;
   border-radius: 5px;
   background-color: #0884e9;
   opacity: 0.7;
   padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.option a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: 0.3s;
+  border-top: solid 3px;
+  font-weight: 700;
+}
+.option a:hover {
+  color: blue;
+  transition: 0.3s;
+}
+
+.option a p {
+  border-bottom: solid 2px #fff;
+}
+
+.option_part:hover {
+  opacity: 1;
+  transition: 0.5s;
+  background-color: #06c6f7;
 }
 
 .news_section {
@@ -327,11 +390,23 @@ body {
   justify-content: start;
 }
 .recent {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
   color: #174973;
   padding: 10px;
 }
 
 /* Recent Updates pecture */
+
+.recent_pecture_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .recent_pecture {
   position: relative;
   display: flex;
@@ -339,9 +414,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 98%;
-  height: 350px;
-  padding: 20px 5px;
-  margin-bottom: 50px;
+  padding: 1.25rem 0.3rem;
   border-top: solid 2px #1558ba;
   box-shadow: 5px 10px 29px 0 rgba(129, 134, 169, 0.88);
 }
@@ -349,8 +422,7 @@ body {
 .recent_pecture_add {
   position: relative;
   height: 100%;
-  width: 305px;
-  /* transition: all 0.3s ease-in-out; */
+  width: 19rem;
 }
 
 .recent_pecture_add_content {
@@ -390,14 +462,11 @@ body {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 50px;
-  /* border: solid rebeccapurple; */
-  /* padding: 20px; */
 }
 
 .recent_pecture_add_content a:hover {
   color: #f5ae0e;
   transition: 0.3s;
-  /* border-bottom: solid orangered 2px; */
 }
 
 .recent_pecture_add img {
@@ -408,6 +477,7 @@ body {
 /* ISRO Centres & Units */
 
 .isro_center {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,102 +509,167 @@ body {
 }
 
 .isro_img_wrapper {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transform-style: preserve-3d;
+  transform: rotateX(-8deg) rotateZ(0deg);
+}
+
+.imges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  animation: rotate 38s infinite linear;
+  transform-style: preserve-3d;
+  float: right;
 }
 .isro_center_img {
   height: 100px;
   width: 80px;
   border-radius: 3px;
-  background-color: rebeccapurple;
-  animation: rotate 5s infinite linear;
-  transform-style: preserve-3d;
-  /* transform: rotate(0deg) translateZ(300px); */
+  position: absolute;
 }
 
+@keyframes rotate {
+  frome {
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
 .isro_center_img img {
   border-radius: 3px;
   height: 100%;
   width: 100%;
 }
-
-@keyframes rotate {
-  from {
-    transform: rotateY(0deg) translateZ(300px);
-  }
-  to {
-    transform: rotateY(20deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(40deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(60deg) translateZ(300px);
-  }
-  to {
-    transform: rotateY(80deg) translateZ(300px);
-  }
-  to {
-    transform: rotateY(100deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(120deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(140deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(160deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(180deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(200deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(220deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(240deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(260deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(280deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(300deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(320deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(340deg) translateZ(300px);
-  }
-
-  to {
-    transform: rotateY(360deg) translateZ(300px);
-  }
+/* image rotating */
+.isro_center_img:nth-child(1) {
+  transform: rotatey(0deg) translateZ(300px);
 }
+
+.isro_center_img:nth-child(2) {
+  transform: rotatey(20deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(3) {
+  transform: rotatey(40deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(4) {
+  transform: rotatey(60deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(5) {
+  transform: rotatey(80deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(6) {
+  transform: rotatey(100deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(7) {
+  transform: rotatey(120deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(8) {
+  transform: rotatey(140deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(9) {
+  transform: rotatey(160deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(10) {
+  transform: rotatey(180deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(11) {
+  transform: rotatey(200deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(12) {
+  transform: rotatey(220deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(13) {
+  transform: rotatey(240deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(14) {
+  transform: rotatey(260deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(15) {
+  transform: rotatey(280deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(16) {
+  transform: rotatey(300deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(17) {
+  transform: rotatey(320deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(18) {
+  transform: rotatey(340deg) translateZ(300px);
+}
+
+.isro_center_img:nth-child(19) {
+  transform: rotatey(360deg) translateZ(300px);
+}
+
+/* image rotating end */
+
+/* right side fixed position image  */
+
+.right_side_image_posotion {
+  position: relative;
+  position: fixed;
+  right: 0px;
+  top: 200px;
+  height: 225px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right_side_image_posotion_content a {
+  position: relative;
+  left: 145px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  transition: 0.3s;
+  color: #020c44;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.right_side_image_posotion_content a:hover {
+  width: 170px;
+  left: 30px;
+  transition: 1s;
+}
+
+.right_side_image_posotion_content img {
+  height: 50px;
+  width: 50px;
+}
+
+/* footer start */
 
 .footer {
   height: 450px;
@@ -560,14 +695,12 @@ body {
   padding: 10px;
   height: 230px;
   width: 380px;
-  /* background-color: rgb(0, 171, 255); */
 }
 
 .address h4 {
   top: 0;
   left: 0;
   position: absolute;
-  /* border: solid red; */
   font-weight: 600;
   font-size: 1.2rem;
   padding: 10px;
@@ -612,12 +745,11 @@ body {
   text-decoration: none;
 }
 
-.footer_li_content i{
+.footer_li_content i {
   color: #8b6e28;
 }
 
-
-.footer_li_content a:hover{
+.footer_li_content a:hover {
   color: #f5ae0e;
   transition: 0.3s;
 }
@@ -629,3 +761,94 @@ body {
   text-align: center;
   margin-top: 25px;
 }
+
+/* -----------------------------Media Query ------------------------------*/
+
+@media screen and (max-width: 700px) {
+  .h1st {
+    height: 70px;
+    /* background-color: rebeccapurple; */
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .h2st {
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .h3st {
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: red; */
+  }
+  .h3st_c {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bg_video {
+    flex-wrap: wrap;
+  }
+  .Heading_wrapper {
+    display: none;
+  }
+  .option {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news_section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .news_section_left {
+    display: block;
+    width: 100%;
+  }
+  .news_section_left_list li a {
+    font-size: 10px;
+  }
+
+  .news_section_right {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .isro_portal {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .isro_portal_wrapper {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .recent_pecture {
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    height: auto;
+  }
+  .footer_top{
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 30px;
+  }
+  .address{
+    border-bottom: solid grey 1px;
+  }
+
+}
+

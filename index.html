@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isro_web_Clone</title>
 
+    <!-- animation scroll add -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="style.css" />
 
@@ -133,20 +135,38 @@
           />
         </video>
         <!-- background video ke niche jo multipal option hai -->
+        <div class="Heading_wrapper">
+          <div class="Heading">
+            <h3>PRESS RELEASE</h3>
+          </div>
+
+          <div class="Heading">
+            <h3>CAREERS</h3>
+          </div>
+
+          <div class="Heading">
+            <h3>STUDENTS</h3>
+          </div>
+
+          <div class="Heading">
+            <h3>TENDERS</h3>
+          </div>
+        </div>
+
         <div class="option">
           <!-- option_1 -->
           <div class="option_part">
-            <div><h3>PRESS RELEASE</h3></div>
-            <div><p>Press Release</p></div>
-            <div>
-              <a href=""><p>MORE INFO</p></a>
+            <div class="option_part_heading"><h3>PRESS RELEASE</h3></div>
+            <div class="option_part_content"><p>Press Release</p></div>
+            <div class="option_part_heading">
+              <a href=""><p>MORE INFO.</p></a>
             </div>
           </div>
 
           <!-- option_2 -->
           <div class="option_part">
-            <div><h3>CAREERS</h3></div>
-            <div>
+            <div class="option_part_heading"><h3>CAREERS</h3></div>
+            <div class="option_part_content">
               <p>
                 Come, become a part of the workforce of the nation's prestigious
                 space agency-be it in the technical or administrative areas?
@@ -155,14 +175,14 @@
               </p>
             </div>
             <div>
-              <a href=""><p>MORE INFO</p></a>
+              <a href=""><p>MORE INFO.</p></a>
             </div>
           </div>
 
           <!-- option_3 -->
           <div class="option_part">
-            <div><h3>STUDENTS</h3></div>
-            <div>
+            <div class="option_part_heading"><h3>STUDENTS</h3></div>
+            <div class="option_part_content">
               <p>
                 ISRO committed to encourage students in creating awareness in
                 the space technology and applications.They are the future hopes
@@ -172,14 +192,14 @@
               </p>
             </div>
             <div>
-              <a href=""><p>MORE INFO</p></a>
+              <a href=""><p>MORE INFO.</p></a>
             </div>
           </div>
 
           <!-- option_4 -->
           <div class="option_part">
-            <div><h3>TENDERS</h3></div>
-            <div>
+            <div class="option_part_heading"><h3>TENDERS</h3></div>
+            <div class="option_part_content">
               <p>
                 This is a portal that carries all notifications related to
                 tenders, corrigendums etc.for procurement related activities of
@@ -188,7 +208,7 @@
               </p>
             </div>
             <div>
-              <a href=""><p>MORE INFO</p></a>
+              <a href=""><p>MORE INFO.</p></a>
             </div>
           </div>
         </div>
@@ -197,7 +217,7 @@
       <!-- news section -->
       <section class="news_section">
         <!-- news_section_left -->
-        <div class="news_section_left">
+        <div data-aos="zoom-out-left" class="news_section_left">
           <h1>Latest News</h1>
           <div class="news_section_left_list">
             <ul>
@@ -446,7 +466,7 @@
         </div>
 
         <!-- news_section_right -->
-        <div class="news_section_right">
+        <div data-aos="zoom-out-left" class="news_section_right">
           <h1>Highlights</h1>
           <div class="Highlights_img">
             <a href=""><img src="Assets/mahaquizbanner.jpg" alt="" /></a>
@@ -457,7 +477,8 @@
       <!-- ISRO Portals -->
       <section class="isro_portal">
         <h1>ISRO Portals</h1>
-        <div class="isro_portal_wrapper">
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="isro_portal_wrapper">
           <!-- 1st -->
           <div class="isro_portal_img">
             <a href=""><img src="Assets/igrasp.png.webp" alt="" /></a>
@@ -521,42 +542,46 @@
       </section>
 
       <!-- Recent Updates pecture -->
+      <section class="recent_pecture_wrapper">
+        <div class="recent_pecture">
+          
+          <div class="recent_pecture_add">
+            <a href=""><img src="Assets/PSLVC56_PostImg.jpg.webp" alt="" /></a>
 
-      <section class="recent_pecture">
-        <div class="recent_pecture_add">
-          <a href=""><img src="Assets/PSLVC56_PostImg.jpg.webp" alt="" /></a>
-
-          <div class="recent_pecture_add_content">
-            <h4>PSLV-C57/Aditya-L1 Mission</h4>
-            <p>Launched on: September 02, 2023</p>
-            <a href="">Read More</a>
+            <div class="recent_pecture_add_content">
+              <h4>PSLV-C57/Aditya-L1 Mission</h4>
+              <p>Launched on: September 02, 2023</p>
+              <a href="">Read More</a>
+            </div>
           </div>
-        </div>
-        <div class="recent_pecture_add">
-          <a href=""><img src="Assets/chandrayaan3_ind.jpg.webp" alt="" /></a>
+          <div class="recent_pecture_add">
+            <a href=""><img src="Assets/chandrayaan3_ind.jpg.webp" alt="" /></a>
 
-          <div class="recent_pecture_add_content">
-            <h4>LVM3-M4 / Chandrayaan-3 Mission</h4>
-            <p>Launched on: July 14, 2023</p>
-            <a href="">Read More</a>
+            <div class="recent_pecture_add_content">
+              <h4>LVM3-M4 / Chandrayaan-3 Mission</h4>
+              <p>Launched on: July 14, 2023</p>
+              <a href="">Read More</a>
+            </div>
           </div>
-        </div>
-        <div class="recent_pecture_add">
-          <a href=""><img src="Assets/mahaquiz1.jpg" alt="" /></a>
+          <div class="recent_pecture_add">
+            <a href=""><img src="Assets/mahaquiz1.jpg" alt="" /></a>
 
-          <div class="recent_pecture_add_content">
-            <h4>Chandrayaan-3</h4>
-            <p>On The Moon: August 23, 2023</p>
-            <a href="">Read More</a>
+            <div class="recent_pecture_add_content">
+              <h4>Chandrayaan-3</h4>
+              <p>On The Moon: August 23, 2023</p>
+              <a href="">Read More</a>
+            </div>
           </div>
-        </div>
-        <div class="recent_pecture_add">
-          <a href=""><img src="Assets/AzadiKaAmrit_large.png.webp" alt="" /></a>
+          <div class="recent_pecture_add">
+            <a href=""
+              ><img src="Assets/AzadiKaAmrit_large.png.webp" alt=""
+            /></a>
 
-          <div class="recent_pecture_add_content">
-            <h4>Azadi Ka Amrit Mahotsav</h4>
-            <!-- <p>Launched on: September 02, 2023</p> -->
-            <a href="">Read More</a>
+            <div class="recent_pecture_add_content">
+              <h4>Azadi Ka Amrit Mahotsav</h4>
+              <!-- <p>Launched on: September 02, 2023</p> -->
+              <a href="">Read More</a>
+            </div>
           </div>
         </div>
       </section>
@@ -570,57 +595,116 @@
           </div>
 
           <div class="isro_img_wrapper">
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
-            </div>
-            <!-- img 1st -->
-            <div class="isro_center_img">
-              <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+            <div class="imges">
+              <!-- img 1st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 2st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 3st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 4st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 5st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 6st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 7st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 8st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 9st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 10st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 11st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 12st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 13st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+              <!-- img 14st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 15st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 16st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 17st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 18st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
+
+              <!-- img 19st -->
+              <div class="isro_center_img">
+                <a href=""><img src="Assets/istrac.jpg.webp" alt="" /> </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- right side fixed position image -->
+      <div class="right_side_image_posotion">
+        <div class="right_side_image_posotion_content">
+          <a href=""><img src="./Assets/akamsidemenu.png" alt="" />AKAM</a>
+        </div>
+
+        <div class="right_side_image_posotion_content">
+          <a href=""
+            ><img src="./Assets/contact.jpg.webp" alt="" />Contact us</a
+          >
+        </div>
+
+        <div class="right_side_image_posotion_content">
+          <a href=""
+            ><img src="./Assets/askanexpert.png.webp" alt="" />Ask an Expert</a
+          >
+        </div>
+
+        <div class="right_side_image_posotion_content">
+          <a href=""><img src="./Assets/feedback.jpg.webp" alt="" />Feedback</a>
+        </div>
+      </div>
 
       <!-- footer -->
       <footer class="footer">
@@ -751,6 +835,12 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
